@@ -1,4 +1,5 @@
 /* Box sizing rules */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
 *,
 *::before,
 *::after {
@@ -71,6 +72,21 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #00252e;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=syle.css.map */
