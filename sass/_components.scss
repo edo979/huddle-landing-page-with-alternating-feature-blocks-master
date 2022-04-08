@@ -1,0 +1,27 @@
+.btn {
+  border: none;
+  border-radius: 1rem;
+
+  font-size: 0.66rem;
+  font-weight: 700;
+  line-height: 1;
+
+  &-primary {
+    padding: 0.7rem 3rem;
+
+    background-color: $Pink;
+
+    color: white;
+    letter-spacing: 0.5px;
+  }
+  &-secondary {
+    padding: 0.4rem 1.25rem;
+
+    background-color: white;
+
+    font-size: 0.6rem;
+    color: $Very-Dark-Cyan;
+
+    box-shadow: 0 2px 15px rgba($color: $Very-Dark-Cyan, $alpha: 0.15);
+  }
+}

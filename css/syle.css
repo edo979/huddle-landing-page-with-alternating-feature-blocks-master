@@ -122,4 +122,25 @@ p {
   font-size: var(--fs-500);
 }
 
+.btn {
+  border: none;
+  border-radius: 1rem;
+  font-size: 0.66rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.btn-primary {
+  padding: 0.7rem 3rem;
+  background-color: #ff52bf;
+  color: white;
+  letter-spacing: 0.5px;
+}
+.btn-secondary {
+  padding: 0.4rem 1.25rem;
+  background-color: white;
+  font-size: 0.6rem;
+  color: #00252e;
+  box-shadow: 0 2px 15px rgba(0, 37, 46, 0.15);
+}
+
 /*# sourceMappingURL=syle.css.map */
