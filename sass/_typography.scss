@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
 
+:root {
+  --fs-300: 0.75rem;
+  --fs-400: 0.8rem;
+  --fs-500: 0.9rem;
+}
+
+html {
+  font-size: 18px;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -14,4 +24,26 @@ h3,
 .h3 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
+}
+
+h1,
+.h1 {
+  font-size: 1.3rem;
+}
+h2,
+.h2 {
+  font-size: 1.15rem;
+}
+h3,
+.h3 {
+  font-size: 1.05rem;
+}
+
+p {
+  font-size: var(--fs-400);
+}
+
+// Utility
+.fs-500 {
+  font-size: var(--fs-500);
 }
