@@ -130,10 +130,18 @@ body {
   padding: 15px;
 }
 
-.flex-space-b {
+.flex {
   display: flex;
-  align-items: center;
+}
+.flex-ai-start {
+  align-items: start;
+}
+.flex-space-b {
   justify-content: space-between;
+}
+
+.gap-2 {
+  gap: 1.5rem;
 }
 
 main {
@@ -200,6 +208,43 @@ main article + article {
 .card p {
   margin-top: 1rem;
   color: #808d99;
+}
+
+.footer {
+  padding-top: 7rem;
+  background-color: #00252e;
+  color: #ebfbff;
+  text-align: left;
+}
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.footer-logo {
+  width: 170px;
+}
+.footer address {
+  font-style: normal;
+}
+.footer address > * + * {
+  margin-top: 1.25rem;
+}
+.footer svg path {
+  fill: white;
+}
+.footer .flex img {
+  margin-top: 0.3rem;
+}
+
+.nav > * + * {
+  margin-top: 1.4rem;
+}
+.nav-link {
+  display: block;
+  line-height: 1;
+  text-decoration: none;
+  color: #ebfbff;
 }
 
 /*# sourceMappingURL=syle.css.map */

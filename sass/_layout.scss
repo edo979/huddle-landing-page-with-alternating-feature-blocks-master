@@ -6,10 +6,20 @@ body {
   padding: 15px;
 }
 
-.flex-space-b {
+.flex {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+
+  &-ai-start {
+    align-items: start;
+  }
+
+  &-space-b {
+    justify-content: space-between;
+  }
+}
+
+.gap-2 {
+  gap: 1.5rem;
 }
 
 main {

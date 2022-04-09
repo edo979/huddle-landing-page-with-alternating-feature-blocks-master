@@ -70,3 +70,52 @@
     color: $Grayish-Blue;
   }
 }
+
+.footer {
+  padding-top: 7rem;
+  background-color: $Very-Dark-Cyan;
+  color: $Very-Pale-Cyan;
+  text-align: left;
+
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  &-logo {
+    width: 170px;
+  }
+
+  address {
+    font-style: normal;
+
+    > * + * {
+      margin-top: 1.25rem;
+    }
+  }
+
+  svg {
+    path {
+      fill: white;
+    }
+  }
+
+  .flex {
+    img {
+      margin-top: 0.3rem;
+    }
+  }
+}
+
+.nav {
+  > * + * {
+    margin-top: 1.4rem;
+  }
+  &-link {
+    display: block;
+    line-height: 1;
+    text-decoration: none;
+    color: $Very-Pale-Cyan;
+  }
+}
