@@ -70,13 +70,17 @@
   padding: 2rem;
   border-radius: 1rem;
 
-  img {
-    margin-bottom: 3rem;
-    margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &-img {
+    margin-bottom: 3.25rem;
+    margin-inline: 0.5rem;
   }
 
   p {
-    margin-top: 1rem;
+    margin-top: 0.9rem;
     color: $Grayish-Blue;
   }
 }
@@ -84,9 +88,10 @@
 .box-float {
   position: absolute;
   bottom: 0;
-  left: 10px;
-  right: 10px;
-  transform: translateY(40%);
+  left: 50%;
+  width: min(400px, 100%);
+
+  transform: translate(-50%, 40%);
 
   padding: 2.4rem 1rem;
 
@@ -171,6 +176,46 @@
       svg path {
         fill: $Pink;
       }
+    }
+  }
+}
+
+@include mq {
+  .header {
+    &-wrapper {
+      margin-top: 0;
+      padding-top: 3rem;
+      gap: 2rem;
+
+      article {
+        flex: 1 1 40%;
+      }
+      div {
+        flex: 1 1 60%;
+
+        img {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .card {
+    min-height: auto;
+    padding-left: 3rem;
+    padding-right: 1rem;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+
+    &-img {
+      margin: 0;
+    }
+
+    &-reverse-md {
+      flex-direction: row-reverse;
     }
   }
 }
