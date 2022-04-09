@@ -29,9 +29,12 @@ body {
   align-items: center;
 }
 
+.md\:flex-column-sb {
+  justify-content: space-between;
+}
+
 .grid-container {
   display: grid;
-  gap: 3rem;
 }
 
 .gap-1 {
@@ -48,8 +51,20 @@ body {
     text-align: left;
   }
 
+  .container {
+    padding-inline: 120px;
+  }
+
   .flex-md {
     display: flex;
     align-items: center;
+  }
+
+  .grid-container {
+    grid-template:
+      'h h h'
+      'l m r' 1fr
+      'l . .' / 2fr 2fr 1fr;
+    column-gap: 5rem;
   }
 }

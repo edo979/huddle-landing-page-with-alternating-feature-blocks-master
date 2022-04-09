@@ -90,10 +90,11 @@
   bottom: 0;
   left: 50%;
   width: min(400px, 100%);
-
+  padding: 2.4rem 1rem;
   transform: translate(-50%, 40%);
 
-  padding: 2.4rem 1rem;
+  display: grid;
+  place-content: center;
 
   z-index: 2;
 
@@ -115,7 +116,7 @@
   text-align: left;
 
   &-logo {
-    width: 170px;
+    margin-bottom: 2rem;
   }
 
   address {
@@ -200,6 +201,10 @@
     }
   }
 
+  .box-float {
+    width: min(800px, 100%);
+  }
+
   .card {
     min-height: auto;
     padding-left: 3rem;
@@ -216,6 +221,37 @@
 
     &-reverse-md {
       flex-direction: row-reverse;
+    }
+  }
+
+  .footer {
+    padding-top: 10rem;
+
+    &-logo {
+      grid-area: h;
+    }
+
+    address {
+      grid-area: l;
+    }
+
+    .nav {
+      grid-area: m;
+
+      display: flex;
+      flex-wrap: wrap;
+
+      > * {
+        flex: 1 1 50%;
+
+        margin: 0;
+      }
+    }
+
+    .md\:flex-column-sb {
+      grid-area: r;
+
+      align-items: start;
     }
   }
 }

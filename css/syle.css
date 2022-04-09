@@ -154,9 +154,12 @@ body {
   align-items: center;
 }
 
+.md\:flex-column-sb {
+  justify-content: space-between;
+}
+
 .grid-container {
   display: grid;
-  gap: 3rem;
 }
 
 .gap-1 {
@@ -245,8 +248,10 @@ body {
   bottom: 0;
   left: 50%;
   width: min(400px, 100%);
-  transform: translate(-50%, 40%);
   padding: 2.4rem 1rem;
+  transform: translate(-50%, 40%);
+  display: grid;
+  place-content: center;
   z-index: 2;
   background-color: white;
   border-radius: 1rem;
@@ -265,7 +270,7 @@ body {
   text-align: left;
 }
 .footer-logo {
-  width: 170px;
+  margin-bottom: 2rem;
 }
 .footer address {
   font-style: normal;
@@ -330,6 +335,10 @@ body {
     margin: 0;
   }
 
+  .box-float {
+    width: min(800px, 100%);
+  }
+
   .card {
     min-height: auto;
     padding-left: 3rem;
@@ -345,15 +354,47 @@ body {
   .card-reverse-md {
     flex-direction: row-reverse;
   }
+
+  .footer {
+    padding-top: 10rem;
+  }
+  .footer-logo {
+    grid-area: h;
+  }
+  .footer address {
+    grid-area: l;
+  }
+  .footer .nav {
+    grid-area: m;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer .nav > * {
+    flex: 1 1 50%;
+    margin: 0;
+  }
+  .footer .md\:flex-column-sb {
+    grid-area: r;
+    align-items: start;
+  }
 }
 @media (min-width: 600px) {
   body {
     text-align: left;
   }
 
+  .container {
+    padding-inline: 120px;
+  }
+
   .flex-md {
     display: flex;
     align-items: center;
+  }
+
+  .grid-container {
+    grid-template: "h h h" "l m r" 1fr "l . ."/2fr 2fr 1fr;
+    column-gap: 5rem;
   }
 }
 
