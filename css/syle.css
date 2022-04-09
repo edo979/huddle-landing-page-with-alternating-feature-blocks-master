@@ -143,7 +143,9 @@ body {
 .flex-space-b {
   justify-content: space-between;
 }
+
 .flex-column-center {
+  display: flex;
   flex-direction: column;
   align-items: center;
 }

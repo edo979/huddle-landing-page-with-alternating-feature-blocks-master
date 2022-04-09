@@ -16,11 +16,12 @@ body {
   &-space-b {
     justify-content: space-between;
   }
+}
 
-  &-column-center {
-    flex-direction: column;
-    align-items: center;
-  }
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .grid-container {
