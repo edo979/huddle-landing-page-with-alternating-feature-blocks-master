@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
 
 :root {
-  --fs-300: 0.75rem;
+  --fs-300: 0.64rem;
   --fs-400: 0.8rem;
   --fs-500: 0.9rem;
 }
@@ -44,6 +44,9 @@ p {
 }
 
 // Utility
+.fs-300 {
+  font-size: var(--fs-300);
+}
 .fs-500 {
   font-size: var(--fs-500);
 }

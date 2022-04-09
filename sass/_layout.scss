@@ -16,8 +16,21 @@ body {
   &-space-b {
     justify-content: space-between;
   }
+
+  &-column-center {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
+.grid-container {
+  display: grid;
+  gap: 3rem;
+}
+
+.gap-1 {
+  gap: 0.75rem;
+}
 .gap-2 {
   gap: 1.5rem;
 }

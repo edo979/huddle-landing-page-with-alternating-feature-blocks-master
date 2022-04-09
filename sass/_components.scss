@@ -73,15 +73,10 @@
 
 .footer {
   padding-top: 7rem;
+  padding-bottom: 3rem;
   background-color: $Very-Dark-Cyan;
   color: $Very-Pale-Cyan;
   text-align: left;
-
-  &-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-  }
 
   &-logo {
     width: 170px;
@@ -93,17 +88,17 @@
     > * + * {
       margin-top: 1.25rem;
     }
+
+    .flex {
+      img {
+        margin-top: 0.3rem;
+      }
+    }
   }
 
   svg {
     path {
       fill: white;
-    }
-  }
-
-  .flex {
-    img {
-      margin-top: 0.3rem;
     }
   }
 }
@@ -117,5 +112,34 @@
     line-height: 1;
     text-decoration: none;
     color: $Very-Pale-Cyan;
+  }
+}
+
+.social {
+  justify-self: center;
+
+  &-icon {
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+    border: 1px solid $Very-Pale-Cyan;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    svg {
+      height: 100%;
+    }
+
+    &:hover {
+      border-color: $Pink;
+      svg path {
+        fill: $Pink;
+      }
+    }
   }
 }
