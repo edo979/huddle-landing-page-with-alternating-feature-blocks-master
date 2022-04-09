@@ -12,4 +12,12 @@ body {
   justify-content: space-between;
 }
 
+main {
+  margin: 2.5rem 0.2rem 2rem;
+
+  article + article {
+    margin-top: 2.25rem;
+  }
+}
+
 @import 'components';

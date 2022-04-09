@@ -136,6 +136,13 @@ body {
   justify-content: space-between;
 }
 
+main {
+  margin: 2.5rem 0.2rem 2rem;
+}
+main article + article {
+  margin-top: 2.25rem;
+}
+
 .btn {
   border: none;
   border-radius: 1.5rem;
@@ -178,6 +185,21 @@ body {
 }
 .header-wrapper img {
   margin-top: 3rem;
+}
+
+.card {
+  min-height: 490px;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.card img {
+  margin-bottom: 3rem;
+  margin-top: 0.5rem;
+}
+.card p {
+  margin-top: 1rem;
+  color: #808d99;
 }
 
 /*# sourceMappingURL=syle.css.map */
