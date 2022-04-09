@@ -4,6 +4,8 @@ body {
 
 .container {
   padding: 15px;
+  max-width: 1400px;
+  margin-inline: auto;
 }
 
 .flex {
@@ -52,7 +54,7 @@ body {
   }
 
   .container {
-    padding-inline: 120px;
+    padding-inline: 105px;
   }
 
   .flex-md {
