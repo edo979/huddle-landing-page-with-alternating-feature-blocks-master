@@ -163,13 +163,6 @@ body {
   gap: 1.5rem;
 }
 
-main {
-  margin: 2.5rem 0.2rem 2rem;
-}
-main article + article {
-  margin-top: 2.25rem;
-}
-
 .btn {
   border: none;
   border-radius: 1.5rem;
@@ -188,7 +181,6 @@ main article + article {
   background-color: white;
   font-size: 0.6rem;
   color: #00252e;
-  box-shadow: 0 2px 15px rgba(0, 37, 46, 0.1);
 }
 
 .img-logo {
@@ -214,11 +206,23 @@ main article + article {
   margin-top: 3rem;
 }
 
+.main {
+  position: relative;
+  margin-top: 2.5rem;
+  padding-bottom: 13rem;
+}
+.main article + article {
+  margin-top: 2.25rem;
+}
+
+.box-shadow {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
 .card {
   min-height: 490px;
   padding: 2rem;
   border-radius: 1rem;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 .card img {
   margin-bottom: 3rem;
@@ -227,6 +231,23 @@ main article + article {
 .card p {
   margin-top: 1rem;
   color: #808d99;
+}
+
+.box-float {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  transform: translateY(40%);
+  padding: 2.4rem 1rem;
+  z-index: 2;
+  background-color: white;
+  border-radius: 1rem;
+}
+.box-float .btn {
+  margin-top: 1.5rem;
+  padding-inline: 2.5rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .footer {
