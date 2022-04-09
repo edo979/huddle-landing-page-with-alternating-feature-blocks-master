@@ -25,3 +25,29 @@
     box-shadow: 0 2px 15px rgba($color: $Very-Dark-Cyan, $alpha: 0.15);
   }
 }
+
+.img-logo {
+  width: 100px;
+}
+
+.header {
+  background-color: $Very-Pale-Cyan;
+  background-image: url(../images/bg-hero-mobile.svg);
+
+  &-top {
+    padding-top: 1.5rem;
+  }
+
+  &-wrapper {
+    margin-top: 2rem;
+    padding: 35px;
+
+    p {
+      margin: 1.25rem 0 1.75rem;
+    }
+
+    img {
+      margin-top: 3rem;
+    }
+  }
+}
