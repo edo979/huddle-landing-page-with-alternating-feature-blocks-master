@@ -31,6 +31,7 @@
 .header {
   background-color: $Very-Pale-Cyan;
   background-image: url(../images/bg-hero-mobile.svg);
+  background-repeat: no-repeat;
 
   &-top {
     padding-top: 1.5rem;
@@ -189,6 +190,8 @@
   }
 
   .header {
+    background-image: url(../images/bg-hero-desktop.svg);
+
     &-top {
       padding-top: 50px;
     }
