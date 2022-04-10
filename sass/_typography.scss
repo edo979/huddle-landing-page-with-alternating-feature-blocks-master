@@ -51,7 +51,7 @@ p {
   font-size: var(--fs-500);
 }
 
-@include mq {
+@include mq($break-point-ld) {
   :root {
     --fs-300: 0.8rem;
     --fs-400: 1rem;

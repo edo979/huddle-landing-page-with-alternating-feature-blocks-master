@@ -48,18 +48,31 @@ body {
 
 @import 'components';
 
-@include mq {
+@include mq($break-point-md) {
   body {
     text-align: left;
   }
 
   .container {
-    padding-inline: 105px;
+    padding-inline: 1rem;
   }
 
   .flex-md {
     display: flex;
     align-items: center;
+  }
+
+  .grid-container {
+    grid-template:
+      'h h h'
+      'l l l' 1fr
+      'm m r' / 1fr 1fr 1fr;
+  }
+}
+
+@include mq($break-point-ld) {
+  .container {
+    padding-inline: 105px;
   }
 
   .grid-container {
