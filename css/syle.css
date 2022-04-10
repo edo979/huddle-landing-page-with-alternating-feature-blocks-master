@@ -475,6 +475,11 @@ body {
   .footer .container {
     padding-inline-start: 125px;
   }
+
+  .nav,
+.flex-column-center {
+    margin-top: 0;
+  }
 }
 @media (min-width: 600px) {
   body {
