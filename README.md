@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Live site](https://your-live-site-url.com)
+- Live Site URL: [Live site](https://edo979.github.io/huddle-landing-page-with-alternating-feature-blocks-master/)
 
 ## My process
 
