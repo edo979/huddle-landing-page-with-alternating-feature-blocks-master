@@ -226,6 +226,7 @@ body {
   background-color: #ebfbff;
   background-image: url(../images/bg-hero-mobile.svg);
   background-repeat: no-repeat;
+  background-position: top center;
 }
 .header-top {
   padding-top: 1.5rem;
